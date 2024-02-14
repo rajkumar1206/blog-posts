@@ -1,7 +1,7 @@
 function NavBar() {
   return (
     <div className="App">
-    navBar
+    Nav Bar
     </div>
   );
 }

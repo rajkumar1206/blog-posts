@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './components/Home';
-import Post from './components/Post';
-import NavBar from './components/NavBar';
+import Wrapper from './components/Wrapper';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -13,18 +11,13 @@ import {
 const router = createBrowserRouter([
   {
     path: "/blog-posts/",
-    element: <Home />,
+    element: <Wrapper />,
   },
-  {
-      path: "/blog-posts/posts/:postId",
-      element: <Post />,
-    },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavBar />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
