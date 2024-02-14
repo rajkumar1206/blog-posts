@@ -1,6 +1,6 @@
 {
   "name": "blog-posts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "homepage": "https://rajkumar1206.github.io/blog-posts",
   "dependencies": {

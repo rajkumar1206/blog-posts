@@ -12,11 +12,11 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/blog-posts/",
     element: <Home />,
   },
   {
-      path: "/posts/:postId",
+      path: "/blog-posts/posts/:postId",
       element: <Post />,
     },
 ]);
