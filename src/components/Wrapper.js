@@ -1,15 +1,12 @@
-import { useParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import Post from './Post';
 import Home from './Home';
 import NavBar from './NavBar';
 
 function Wrapper() {
-  let search = window.location.search;
-  let params = new URLSearchParams(search);
-  let postId = params.get('postId');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const postId = searchParams.get('postId');
 
-
-  console.log(postId);
   return (
     <div className="App">
       <NavBar />
