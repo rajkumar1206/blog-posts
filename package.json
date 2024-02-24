@@ -2,7 +2,7 @@
   "name": "blog-posts",
   "version": "0.1.1",
   "private": true,
-  "homepage": "https://rajkumar1206.github.io/blog-posts",
+  "homepage": "https://blog.rajkumarr.tech",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
