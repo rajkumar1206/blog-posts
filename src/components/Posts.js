@@ -57,7 +57,7 @@ function Posts() {
                 bg={theme === 'light' ? "light" : "dark"}
                 text={theme === 'light' ? 'dark' : 'white'}
                 >
-                <Card.Img variant="top" width={400} height={400} src={'https://raw.githubusercontent.com/rajkumar1206/blog-data/main/' + blog.image} />
+                <Card.Img variant="top" width={400} src={'https://raw.githubusercontent.com/rajkumar1206/blog-data/main/' + blog.image} />
                 <Card.Body>
                   <Card.Title>{blog.topic}</Card.Title>
                   <Card.Text>
