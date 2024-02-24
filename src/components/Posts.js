@@ -1,11 +1,12 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import Spinner from 'react-bootstrap/Spinner';
 import { createSearchParams, useNavigate } from "react-router-dom";
 import { ArrowRight } from 'react-bootstrap-icons';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { AppContext } from "./Wrapper";
+import SpinnerComponent from "./shared/Spinner";
+import ErrorComponent from "./shared/ErrorComponent";
 
 function Posts() {
   const navigate = useNavigate();
@@ -37,11 +38,11 @@ function Posts() {
   }
 
   if (isLoading) {
-    return (
-      <Spinner animation="border" role="status" className="mt-2">
-        <span className="visually-hidden">Loading...</span>
-      </Spinner>
-    )
+    return <SpinnerComponent />
+  }
+
+  if (iserror) {
+    return <ErrorComponent />
   }
 
   return (
@@ -69,11 +70,6 @@ function Posts() {
           ))
         }
       </div>
-        {
-          iserror && (
-            <div>Error Loading content...</div>
-          )
-        }
     </div>
   );
 }
