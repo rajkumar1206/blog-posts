@@ -4,3 +4,43 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.c-p {
+    cursor: pointer;
+}
+
+.heading {
+    font-size: large;
+    font-style: italic;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white !important;
+}
+
+.dark-mode small {
+    color: white !important;
+} 
+.dark-mode .form-control, .dark-mode ::placeholder {
+    color: white !important;
+}
+
+.dark-mode .form-control:focus {
+    background-color: black !important;
+}
+
+.dark-mode input {
+    background-color: black;
+}
+
+.dark-mode .copyright {
+    color: black !important;
+}

@@ -4,8 +4,8 @@ function Post() {
   const {postId} = useParams();
 
   return (
-    <div className="App">
-        Post page
+    <div className="post">
+        Coming soon...
     </div>
   );
 }

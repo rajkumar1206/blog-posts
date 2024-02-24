@@ -1,22 +1,10 @@
 import '../App.css';
-import { createSearchParams, useNavigate } from "react-router-dom";
+import Posts from './Posts';
 
 function Home() {
-  const navigate = useNavigate();
-
-  const handlePostnavigation = () => {
-    navigate({
-      search: createSearchParams({
-          postId: 123
-      }).toString()
-    });
-  }
-
-
   return (
     <div className="App">
-        home Page
-        <div onClick={handlePostnavigation}>Post 1</div>
+        <Posts />
     </div>
   );
 }
