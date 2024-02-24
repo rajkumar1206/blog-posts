@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap-utilities.css'
 
 const router = createBrowserRouter([
   {
-    path: "/blog-posts/",
+    path: "/",
     element: <Wrapper />,
     pathname: "post",
   },
