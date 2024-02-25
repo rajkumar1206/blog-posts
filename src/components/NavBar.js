@@ -22,7 +22,9 @@ function NavBar() {
 
   const navigateToContact = () => {
     const section = document.querySelector( '#contact' );
-    section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+    section
+      ? section.scrollIntoView( { behavior: 'smooth', block: 'start' } )
+      : navigateHome()
   };
   
   return (
