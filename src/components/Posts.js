@@ -53,7 +53,7 @@ function Posts() {
           !iserror && blogs.map((blog) => (
             <div>
                <Card
-                style={{ minWidth: '18rem' }}
+                style={{ maxWidth: '35rem' }}
                 bg={theme === 'light' ? "light" : "dark"}
                 text={theme === 'light' ? 'dark' : 'white'}
                 >
